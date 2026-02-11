@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('invoice_number')->unique(); 
             $table->decimal('amount', 12, 2);
             $table->string('status')->default('unpaid');
+            $table->text('payment_link')->nullable();
             $table->timestamp('paid_at')->nullable();
             $table->timestamps();
         });

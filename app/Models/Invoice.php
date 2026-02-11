@@ -15,6 +15,7 @@ class Invoice extends Model
         'invoice_number',
         'amount',
         'status',
+        'payment_link',
         'paid_at',
     ];
 

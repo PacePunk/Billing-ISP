@@ -2,14 +2,7 @@
 
 namespace App\Services;
 
-$path = base_path('vendor/evilfreelancer/routeros-api-php/src');
-if (!is_dir($path)) {
-    die("GAWAT! Folder library tidak terbaca di: " . $path);
-}
-require_once $path . '/Interfaces/ClientInterface.php';
-require_once $path . '/Client.php';
-
-use EvilFreelancer\RouterOS\Client;
+use RouterOS\Client;
 use Exception;
 
 class MikrotikService
